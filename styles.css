@@ -1,7 +1,7 @@
 *{
     border: 1px solid red;
     padding:10px;
-    background-color: rgb(0, 137, 195);
+    font-family:sans-serif;
 }
 .container{
     display:grid;
@@ -24,15 +24,17 @@
     grid-column-start:2;
     grid-column-end:3;
     grid-row-start:2;
-    grid-row-end:10;
+    grid-row-end: 10;
     background-color: rgb(238, 238, 238);
+    display:grid;
+    grid-template-columns:3fr 1fr;
 }
 .sidebar-head{
     display:grid;
     grid-template-columns:1fr 5fr;
 }
 .dashboard{
-    color:white;
+    color:rgb(120, 120, 120);
 }
 h1{
     font-size:20px;
@@ -42,4 +44,38 @@ h1{
 .nav-button{
     display:grid;
     grid-template-columns: 1fr 5fr;
+}
+.header{
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr;
+}
+.search{
+    display:grid;
+    grid-template-columns: 1fr 6fr;
+}
+.user{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+}
+.f-name{
+    display:grid;
+    grid-template-rows: 1fr 3fr;
+}
+.projects{
+    grid-row-start:1;
+    grid-row-end:3;
+    
+}
+.project-grid{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+}
+.announcements{
+    grid-row-start:1;
+    grid-row-end:2;
+}
+.trending{
+    grid-row-start:2;
+    grid-row-end:3;
 }
