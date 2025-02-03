@@ -65,11 +65,13 @@ h1{
 .projects{
     grid-row-start:1;
     grid-row-end:3;
-    
+    display: grid;
+    grid-template-rows: 1fr 5fr;
 }
 .project-grid{
     display: grid;
     grid-template-columns:1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 .announcements{
     grid-row-start:1;
@@ -78,4 +80,37 @@ h1{
 .trending{
     grid-row-start:2;
     grid-row-end:3;
+}
+.nav-button > .settings{
+    margin-top:30px;
+}
+.project{
+    display:grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr;
+    grid-template-rows: 3fr 1fr;
+}
+.project-info{
+    grid-column-start:1;
+    grid-column-end:5;
+}
+.favourite {
+    grid-column-start:2;
+    grid-column-end:3;
+}
+.trendy-user{
+    display:grid;
+    grid-template-columns:1fr 4fr;
+}
+.icon{
+    grid-column-start:1;
+    grid-column-end:2;
+    grid-row-start:1;
+    grid-row-end:3;
+}
+.username{
+    grid-column-start:2;
+    grid-row-end:2;
+}
+.heading{
+    grid-row-start:2;
 }
